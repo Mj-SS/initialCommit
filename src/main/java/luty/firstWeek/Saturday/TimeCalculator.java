@@ -1,4 +1,4 @@
-package luty.firstWeek;
+package luty.firstWeek.Saturday;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

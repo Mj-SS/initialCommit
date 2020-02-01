@@ -1,7 +1,6 @@
-package luty.firstWeek;
+package luty.firstWeek.Saturday;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class WuhanApp {
 
@@ -24,18 +23,24 @@ public class WuhanApp {
 
 //        MyQueue
 
-        MyQueue<String> myStringQueue = new MyQueue<>();
-        myStringQueue.offer("Byczku");
-        myStringQueue.offer("to ja");
-        myStringQueue.offer("dawaj tutaj ");
-        myStringQueue.offer("Byczku");
-        MyQueue<Integer> myIntigerQueue = new MyQueue<>();
+//        MyQueue<String> myStringQueue = new MyQueue<>();
+//        myStringQueue.offer("Byczku");
+//        myStringQueue.offer("to ja");
+//        myStringQueue.offer("dawaj tutaj ");
+//        myStringQueue.offer("Byczku");
+//        MyQueue<Integer> myIntigerQueue = new MyQueue<>();
+//
+//        myStringQueue.printAll();
+//        myStringQueue.pool();
+//        myStringQueue.pool();
+//        System.out.println("After removale: ");
+//        myStringQueue.printAll();
 
-        myStringQueue.printAll();
-        myStringQueue.pool();
-        myStringQueue.pool();
-        System.out.println("After removale: ");
-        myStringQueue.printAll();
 
+//        BubbleSort
+
+        int [] numbers = {10, -4, 66, 3223, 34, 0, -343, 5, 5, 78};
+        BubbleSort.sort(numbers);
+        System.out.println(Arrays.toString(numbers));
     }
 }

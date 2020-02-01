@@ -1,4 +1,4 @@
-package luty.firstWeek;
+package luty.firstWeek.Saturday;
 
 import java.util.HashSet;
 import java.util.List;

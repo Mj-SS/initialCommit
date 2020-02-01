@@ -1,7 +1,4 @@
-package luty.firstWeek;
-
-import java.time.LocalDate;
-
+package luty.firstWeek.Saturday;
 
 
 public class TC {

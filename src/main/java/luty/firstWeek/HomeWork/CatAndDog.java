@@ -1,4 +1,4 @@
-package luty.firstWeek;
+package luty.firstWeek.HomeWork;
 
 public class CatAndDog {
 

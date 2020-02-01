@@ -1,4 +1,4 @@
-package luty.firstWeek;
+package luty.firstWeek.Saturday;
 
 public enum Gender {
 
