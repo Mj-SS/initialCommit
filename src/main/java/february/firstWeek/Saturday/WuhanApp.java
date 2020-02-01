@@ -1,4 +1,4 @@
-package luty.firstWeek.Saturday;
+package february.firstWeek.Saturday;
 
 import java.util.Arrays;
 

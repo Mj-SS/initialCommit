@@ -1,4 +1,4 @@
-package luty.firstWeek.HomeWork;
+package february.firstWeek.HomeWork;
 
 public class CashMashine {
     

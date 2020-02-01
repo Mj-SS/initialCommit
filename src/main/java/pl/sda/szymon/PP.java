@@ -1,4 +1,4 @@
-package pl;
+package pl.sda.szymon;
 
 import LinkedList.Employee;
 import pl.sda.szymon.Person;
