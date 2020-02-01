@@ -3,6 +3,7 @@ package luty.firstWeek;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
+import java.util.SortedMap;
 
 //        Stwórz klasę TimeCalculator. Stwórz w niej metodę daysToChristmasEveInfo()
 //        wyświetlają informację w konsoli z komunikatem: "It's just [ilość dni]to Christmas Eve!".
@@ -17,27 +18,21 @@ import java.time.temporal.ChronoUnit;
 //        Przetestuj też z metody main samą metodę daysToChristmasEve przekazując
 //        jej różne daty i drukując wynik.
 
-//        Stwórz w TimeCalculator metodę minutesToEndOfClass().
-//        Jej celem będzie wydrukowanie wiadomości "There is [ilość minut] minutes left to the end of today class".
-//        Postaraj się zainspirować poprzednim zadaniem. Użyj jednak tym razem klasy LocalTime.
-//        Następnie dodaj pętlę do while która będzie działała dopóki wartość ta
-//        nie będzie wynosić 0, dodaj też w tej pętli Thread.sleep(5000) aby obliczenia i drukowanie były co 5 sekund.
-
 
 public class TimeCalculator {
 
-    public  void daysToChristmasEveInfo() {
+    public void daysToChristmasEveInfo() {
 
         LocalDate today = LocalDate.now();
         daysToChristmasEve(today);
 
     }
 
-    public  void daysToChristmasEve(LocalDate today ) {
+    public void daysToChristmasEve(LocalDate today) {
 
-        LocalDate nextChristmas = LocalDate.of(today.getYear(),12,24);
+        LocalDate nextChristmas = LocalDate.of(today.getYear(), 12, 24);
 
-        if (today.getMonthValue() == 12 && today.getDayOfMonth() > 24){
+        if (today.getMonthValue() == 12 && today.getDayOfMonth() > 24) {
             nextChristmas = nextChristmas.plusYears(1);
         }
 
@@ -54,12 +49,25 @@ public class TimeCalculator {
 
     }
 
-    public void minutesToEndOfClass(){
+    //        Stwórz w TimeCalculator metodę minutesToEndOfClass().
+//        Jej celem będzie wydrukowanie wiadomości "There is [ilość minut] minutes left to the end of today class".
+//        Postaraj się zainspirować poprzednim zadaniem. Użyj jednak tym razem klasy LocalTime.
+//        Następnie dodaj pętlę do while która będzie działała dopóki wartość ta
+//        nie będzie wynosić 0, dodaj też w tej pętli Thread.sleep(5000) aby obliczenia i drukowanie były co 5 sekund.
 
-        LocalTime timeToEndOfClass = LocalTime.of(16, 0, 0);
+    public void minutesToEndOfClass() throws InterruptedException {
+            long minutesLeft;
+        LocalTime timeToEndOfClass = LocalTime.of(16, 0);
+
+        do {
+            LocalTime now = LocalTime.now();
+            minutesLeft = ChronoUnit.MINUTES.between(now, timeToEndOfClass);
+
+            Thread.sleep(30000);
+            System.out.println("There is " + minutesLeft + " minutes left to the end of today class");
+        } while (minutesLeft >= 0);
 
 
-        String c = "There is" + [ilość minut] + " minutes left to the end of today class";
     }
 
 
