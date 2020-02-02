@@ -17,24 +17,24 @@ public class WuhanApp {
 //        listOfProgrammers.add(new Programmer(8, "Braian", "Jessica", Gender.OTHER));
 //
 //        LifeSimulator.simulate(listOfProgrammers, 20);
-//
-//
-//        String q = "----------------------------------------------------------------------------------------------";
+
+
+        String q = "----------------------------------------------------------------------------------------------";
 
 //        MyQueue
 
-//        MyQueue<String> myStringQueue = new MyQueue<>();
-//        myStringQueue.offer("Byczku");
-//        myStringQueue.offer("to ja");
-//        myStringQueue.offer("dawaj tutaj ");
-//        myStringQueue.offer("Byczku");
-//        MyQueue<Integer> myIntigerQueue = new MyQueue<>();
-//
-//        myStringQueue.printAll();
-//        myStringQueue.pool();
-//        myStringQueue.pool();
-//        System.out.println("After removale: ");
-//        myStringQueue.printAll();
+        MyQueue<String> myStringQueue = new MyQueue<>();
+        myStringQueue.offer("Byczku");
+        myStringQueue.offer("to ja");
+        myStringQueue.offer("dawaj tutaj ");
+        myStringQueue.offer("Byczku");
+        MyQueue<Integer> myIntigerQueue = new MyQueue<>();
+
+        myStringQueue.printAll();
+        myStringQueue.pool();
+        myStringQueue.pool();
+        System.out.println("After removale: ");
+        myStringQueue.printAll();
 
 
 //        BubbleSort
