@@ -10,6 +10,14 @@ public class App {
 
     public static void main(String[] args) {
 
+        int[] testArr = {1, 2, 3, 4, 5, 6, 8, 98, 123, 335, 457, 4621};
+        int result = BinarySearch.search(335, testArr, 0, testArr.length - 1);
+        System.out.println(result);
+    }
+
+
+    public static void main1(String[] args) {
+
         SoftDrink[] arrDrinks =   {
                 new SoftDrink("Coca Cola", "Coca Cola Inc", 4.5),
                 new SoftDrink("Pepsi", "PepsiCo", 4.2),
@@ -43,7 +51,7 @@ public class App {
     }
 
 
-    public static void main1(String[] args) {
+    public static void main2(String[] args) {
 
         int[] tabOne = {12, 5, 3, 5, 6, 3, 353, 42};
         int[] tabTwo = {12, -5, 3, 5, 2332, 13, 353, 42, 55, 6666, 34};
@@ -56,7 +64,6 @@ public class App {
         System.out.println(Arrays.toString(tabTwo));
         Arrays.sort(tabTwo);
         System.out.println(Arrays.toString(tabTwo));
-
     }
 
 }
